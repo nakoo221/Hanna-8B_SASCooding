@@ -1,0 +1,242 @@
+/* Custom Properties for Color Palette */
+:root {
+    --color-primary: #33558B; /* Deep Blue - Haku/Elegance */
+    --color-secondary: #E399B9; /* Dusty Rose Pink - Chihiro/Softness */
+    --color-accent-green: #6AA598; /* Jade Green - Spirit World Accent */
+    --color-text-dark: #2F2F2F; /* Very Dark Grey */
+    --color-text-light: #F8F8F8; /* Near White */
+    --color-background-light: #FFFFFF;
+}
+
+/* General Styling and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif; /* Classic, readable font */
+    line-height: 1.7;
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Formal, display font */
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.logo p {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--color-accent-green); /* Green accent in logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    transition: color 0.3s, border-bottom 0.3s;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: var(--color-secondary); /* Pink on hover */
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 180px 20px;
+    background: url('images/hero-spirited.jpg') no-repeat center center/cover; /* Placeholder for an epic Spirited Away scene */
+    color: var(--color-text-light);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+.hero-section h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: var(--color-text-light);
+}
+
+.hero-section p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+#explore-button {
+    background-color: var(--color-secondary); /* Pink button */
+    color: var(--color-text-dark);
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, letter-spacing 0.2s;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+#explore-button:hover {
+    background-color: #F0C4D5; /* Lighter Pink */
+    letter-spacing: 2.5px;
+}
+
+/* Character Sections */
+.character-section {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.character-section.light-bg {
+    background-color: var(--color-background-light);
+    border-left: 5px solid var(--color-secondary); /* Pink accent */
+}
+
+.character-section.dark-bg {
+    background-color: #F5F5F5;
+    border-left: 5px solid var(--color-primary); /* Blue accent */
+}
+
+.content-box {
+    padding: 20px;
+}
+
+.character-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+.character-section p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+blockquote {
+    border-left: 5px solid var(--color-accent-green);
+    padding-left: 20px;
+    margin-top: 30px;
+    font-style: italic;
+    color: var(--color-text-dark);
+    background-color: rgba(106, 165, 152, 0.1); /* Light green tint */
+    padding: 15px;
+}
+
+/* Duo Section */
+.duo-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--color-primary); /* Deep Blue Background */
+    color: var(--color-text-light);
+}
+
+.duo-section h2 {
+    color: var(--color-secondary); /* Pink heading */
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.duo-summary {
+    font-size: 1.3em;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 300px;
+    overflow: hidden;
+    background: var(--color-text-light);
+    color: var(--color-text-dark);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.gallery-item img:hover {
+    opacity: 0.8;
+}
+
+.gallery-item p {
+    padding: 15px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--color-accent-green);
+    color: var(--color-text-light);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-text-dark);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .character-section {
+        flex-direction: column;
+        margin: 50px 20px;
+        padding: 20px;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-section h1 {
+        font-size: 3em;
+    }
+}
